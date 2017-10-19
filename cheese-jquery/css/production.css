@@ -1,0 +1,359 @@
+/*
+* @Author: 靳振国
+* @Date:   2017-10-16 08:55:16
+* @Last Modified by:   靳振国
+* @Last Modified time: 2017-10-19 14:35:43
+*/
+@import url('base.css');
+/* section{
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: pink;
+} */
+body,html{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+}
+.main>li{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+.main>li:first-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* .mian>li:first-child{
+	left: 0;
+} */
+header{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.top{
+	width: 100%;
+	height: 58px;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	z-index: 9999;
+	top: 0px;
+	left: 0;
+}
+.top h3{
+	color: #f67000;
+	float: left;
+	margin-left: 40px;
+	line-height: 58px;
+}
+.top ul{
+	width: auto;
+	float: right;
+	height: 100%;
+	margin-right: 40px;
+}
+.top ul li{
+	width: auto;
+	margin-right: 25px;
+	float: right;
+	line-height: 58px;
+	color: #fff;
+}
+.sha{
+	width: 100%;
+	height: 722px;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 58px;
+	left: 0;
+}
+.top-bacimg{
+/* 	width: 100%;
+	height: auto; */
+	display: block;
+	background-image: url('../img/55d15dcded346.jpg');
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 720px;
+    margin-top: 58px;
+}
+.arrows-left{
+	width: 40px;
+	height: 40px;
+	background: #404040;
+	color: #202020;
+	font-size: 12px;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	bottom: 50px;
+	right: 100px;
+	cursor: pointer;
+	transition: all 0.6s;
+	z-index: 1000;
+}
+.arrows-left:hover{
+	background: #e74c3c;
+	color: #fff;
+}
+.arrows-right{
+	width: 40px;
+	height: 40px;
+	background: #404040;
+	color: #202020;
+	font-size: 12px;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	cursor: pointer;
+	z-index: 1000;
+	transition: all 0.6s;
+}
+.arrows-right:hover{
+	background: #e74c3c;
+	color: #fff;
+}
+.banner{
+	width: 1138px;
+	height:410px;
+	position: absolute;
+	top:250px;
+	left: 0%;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.banner-list{
+	width: 3414px;
+	height:80%;
+	
+}
+.banner-list li{
+	width: 1138px;
+	float: left;
+}
+.banner-list h3{
+	text-align: center;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.banner-list h1{
+	text-align: center;
+	margin-bottom: 40px;
+	color: #fff;
+}
+.banner-list p{
+	color: #fff;
+    max-width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 32px;
+}
+.banner-list p>span{
+	float: right;
+}
+.button-two{
+	width: 340px;
+	height: 45px;
+	margin: 30px auto;
+}
+.button-left{
+	display: block;
+	width: 162px;
+	height: 45px;
+	padding: 8px 40px;
+	border: 2px solid #000;
+	margin: 0 auto;
+	border-radius: 5px;
+	float: left;
+	background: #fff;
+}
+.vue p,.vue a{
+	width: 162px;
+	height: 45px;
+	color: #000;
+	display: block;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	line-height: 22.5px;
+}
+.button-left{
+	box-shadow: 0px 0px 7px 12px rgba(255, 255, 255, 0);
+	transition: all 0.2s;
+}
+.button-left:hover{
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1.0);
+	transition: all 0.3s;
+	background: #000;
+	color: #fff;
+}
+.button-left:hover .vue p{
+	color: #fff;
+}
+
+
+.button-right{
+	display: block;
+	width: 162px;
+	height: 45px;
+	padding: 8px 40px;
+	border: 2px solid #000;
+	margin: 0 auto;
+	border-radius: 5px;
+	float: right;
+	text-align: center;
+	line-height: 22.5px;
+	background: #000;
+	/* margin-top: -30px; */
+}
+
+.vue1 p{
+	width: 162px;
+	height: 45px;
+	color: #fff;
+	display: block;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	text-align: center;
+	line-height: 22.5px;
+}
+.button-right{
+	box-shadow: 0px 0px 7px 12px rgba(0, 0, 0, 0);
+	transition: all 0.2s;
+}
+.button-right:hover{
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1.0);
+	transition: all 0.3s;
+	background: #000;
+	color: #fff;
+}
+.button-right:hover .vue1 p{
+	color: #fff;
+}
+.main-text{
+	width:1170px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+.title-text{
+	width: 750px;
+	height: auto;
+	margin: 0 auto;
+}
+.title-text h2{
+	text-align: center;
+	font-weight: 600;
+	font-family: 'Cantarell', sans-serif;
+	margin-bottom: 50px;
+}
+.title-text p{
+	line-height: 30px;
+	font-weight: 500;
+}
+.main-last{
+	width:1170px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.main-last p{
+	display: block;
+	width: 860px;
+	font-size: 15px;
+	color: #777;
+	line-height: 30px;
+	float: left;
+	margin-bottom: 20px;
+}
+.main-last span{
+	float: right;
+	text-align: right;
+	color: #ccc;
+	margin-top: 22px;
+}
+.last-right{
+	width: 260px;
+	height: auto;
+	float: right;
+}
+.last-right .img-right{
+	width: 100%;
+	height: 100%;
+	background: yellow;
+}
+.last-right img{
+	margin-top: -79.2px;
+	width: 100%;
+	height: 100%;
+}
+.last-share{
+	position: relative;
+	width:250px;
+	height: 30px;
+}
+.i-share{
+	width: 50px;
+	line-height: 30px;
+	float: left;
+	margin-top: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ii-share{
+	width: 250px;
+	height: 100%; 
+	line-height: 30px;
+	/* background: pink; */
+	margin-top: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.i-share>i{
+	font-size: 24px;
+	color: #808080;
+}
+.ii-share>i:first-child{
+	font-size: 20px;
+	color: #3EB135;
+}
+.ii-share>i:nth-of-type(2){
+	font-size: 20px;
+	color: #ff7000;
+}
+.ii-share>i:nth-of-type(3){
+	font-size: 20px;
+	color: #1E9CF0;
+}
+
